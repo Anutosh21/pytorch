@@ -1,7 +1,16 @@
-name: xeus-kernel
+# Target platform: emscripten-wasm64
+name: modnet-wasm64
 channels:
-  - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+- https://repo.prefix.dev/emscripten-forge/6x
+- conda-forge
 dependencies:
-  - xeus-python
-  - ipycanvas
+- python=3.14.3
+- xeus-python=0.19.1
+- pyjs=4.1.0
+- numpy=2.5.4
+- iree-base-compiler=20261115
+- iree-base-runtime=20261115
+- pytorch=2.15.0a0=*_1
+- iree-turbine=3.10.0=*_2
+- pillow=13.0.0
+- opencv=5.0.0=*_6
